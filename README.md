@@ -18,16 +18,16 @@ RUN apt-get update\
  && apt-get install -y texlive-full\
  && r -e "utils::install.packages('BiocManager')"\
  && r -e "BiocManager::install(ask = FALSE, version = 'devel')"\
- && r -e "BiocManager::install('AnnotationHub)"\
- && r -e "BiocManager::install('ExperimentHub)"\
- && r -e "BiocManager::install('BiocCheck)"\
- && r -e "BiocManager::install('BiocStyle)"\
- && r -e "BiocManager::install('SummarizedExperiment)"\
- && r -e "BiocManager::install('SingleCellExperiment)"\
- && r -e "BiocManager::install('TreeSummarizedExperiment)"\
- && r -e "BiocManager::install('devtools)"\
- && r -e "BiocManager::install('roxygen2)"\
- && r -e "BiocManager::install('tidymodels)"\
- && r -e "BiocManager::install('tidyverse)"
+ && r -e "BiocManager::install('AnnotationHub')"\
+ && r -e "BiocManager::install('ExperimentHub')"\
+ && r -e "BiocManager::install('BiocCheck')"\
+ && r -e "BiocManager::install('BiocStyle')"\
+ && r -e "BiocManager::install('SummarizedExperiment')"\
+ && r -e "BiocManager::install('SingleCellExperiment')"\
+ && r -e "BiocManager::install('TreeSummarizedExperiment')"\
+ && r -e "BiocManager::install('devtools')"\
+ && r -e "BiocManager::install('roxygen2')"\
+ && r -e "BiocManager::install('tidymodels')"\
+ && r -e "BiocManager::install('tidyverse')"
 
 ```
