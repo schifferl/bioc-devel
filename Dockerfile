@@ -4,15 +4,22 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update\
  && apt-get upgrade -y\
+ && apt-get install -y curl\
+ && apt-get install -y libblas-dev\
  && apt-get install -y libcairo2-dev\
  && apt-get install -y libfontconfig1-dev\
  && apt-get install -y libgdal-dev\
+ && apt-get install -y liblapack-dev\
  && apt-get install -y libmagick++-dev\
+ && apt-get install -y libomp-dev\
+ && apt-get install -y libopenmpi-dev\
  && apt-get install -y libudunits2-dev\
  && apt-get install -y libz-dev\
+ && apt-get install -y llvm\
  && apt-get install -y qpdf\
  && apt-get install -y ssh\
  && apt-get install -y texlive-full\
+ && apt-get install -y vim\
  && r -e "utils::install.packages('BiocManager')"\
  && r -e "BiocManager::install(ask = FALSE, version = 'devel')"\
  && r -e "BiocManager::install('AnnotationHub')"\
