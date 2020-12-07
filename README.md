@@ -30,6 +30,9 @@ RUN apt-get update\
  && r -e "BiocManager::install('ExperimentHub')"\
  && r -e "BiocManager::install('BiocCheck')"\
  && r -e "BiocManager::install('BiocStyle')"\
+ && r -e "BiocManager::install('Biostrings')"\
+ && r -e "BiocManager::install('GenomicRanges')"\
+ && r -e "BiocManager::install('MultiAssayExperiment')"\ 
  && r -e "BiocManager::install('SummarizedExperiment')"\
  && r -e "BiocManager::install('SingleCellExperiment')"\
  && r -e "BiocManager::install('TreeSummarizedExperiment')"\
